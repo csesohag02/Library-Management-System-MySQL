@@ -72,4 +72,4 @@ CALL IssueBook('MBR100', 'CPY100');
 ## Author
 - **@csesohag02**  
   GitHub: [https://github.com/csesohag02](https://github.com/csesohag02)
-  **Created and maintained by @csesohag02**
+- **Created and maintained by @csesohag02**
