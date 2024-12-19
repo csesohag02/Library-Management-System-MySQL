@@ -4,7 +4,8 @@
 -- Author: @csesohag02
 -- GitHub: https://github.com/csesohag02
 
--- Table 1 - Branch: Stores information about library branches.
+-- Table 1 - Branch : Stores information about library branches.
+-- Author: @csesohag02
 CREATE TABLE Branch(
     Branch_id VARCHAR(10) NOT NULL,
     Branch_address VARCHAR(30) NOT NULL,
@@ -13,8 +14,8 @@ CREATE TABLE Branch(
     PRIMARY KEY(Branch_id)
 );
 
+-- Table 2 - Employee_position : Stores position details and salaries for employees.
 -- Author: @csesohag02
--- Table 2 - Employee Position: Stores position details and salaries for employees.
 CREATE TABLE Employee_position(
     Position_id VARCHAR(5) NOT NULL,
     Position_name VARCHAR(20) NOT NULL,
@@ -22,8 +23,8 @@ CREATE TABLE Employee_position(
     PRIMARY KEY(Position_id)
 );
 
+-- Table 3 - Employee : Stores employee details, including assigned branch and position.
 -- Author: @csesohag02
--- Table 3 - Employee: Stores employee details, including assigned branch and position.
 CREATE TABLE Employee(
     Emp_id VARCHAR(10) NOT NULL,
     Emp_name VARCHAR(30) NOT NULL,
@@ -36,8 +37,8 @@ CREATE TABLE Employee(
     FOREIGN KEY(Branch_id) REFERENCES Branch(Branch_id)
 );
 
+-- Table 4 - Members : Stores library member details, including registration date and branch association.
 -- Author: @csesohag02
--- Table 4 - Members: Stores library member details, including registration date and branch association.
 CREATE TABLE Members(
     Member_id VARCHAR(10) NOT NULL,
     Member_name VARCHAR(30) NOT NULL,
@@ -49,8 +50,8 @@ CREATE TABLE Members(
     FOREIGN KEY(Branch_id) REFERENCES Branch(Branch_id)
 );
 
+-- Table 5 - Book : Stores information about books available in the library.
 -- Author: @csesohag02
--- Table 5 - Book: Stores information about books available in the library.
 CREATE TABLE Book(
     Book_id VARCHAR(10) NOT NULL,
     ISBN VARCHAR(20) NOT NULL,
@@ -65,8 +66,8 @@ CREATE TABLE Book(
     PRIMARY KEY(Book_id)
 );
 
+-- Table 6 - Book_copies : Tracks the number of copies of a book at specific branches.
 -- Author: @csesohag02
--- Table 6 - Book Copies: Tracks the number of copies of a book at specific branches.
 CREATE TABLE Book_copies(
     Copy_id VARCHAR(10) NOT NULL,
     Book_id VARCHAR(10) NOT NULL,
@@ -78,8 +79,8 @@ CREATE TABLE Book_copies(
     FOREIGN KEY(Branch_id) REFERENCES Branch(Branch_id)
 );
 
+-- Table 7 - Issue_book : Tracks book issuance records, including due dates and issued copies.
 -- Author: @csesohag02
--- Table 7 - Issue Book: Tracks book issuance records, including due dates and issued copies.
 CREATE TABLE Issue_book(
     Issue_id VARCHAR(10) NOT NULL,
     Branch_id VARCHAR(10) NOT NULL,
@@ -95,8 +96,8 @@ CREATE TABLE Issue_book(
     FOREIGN KEY(Copy_id) REFERENCES Book_copies(Copy_id)
 );
 
+-- Table 8 - Fine : Tracks fines incurred by members for overdue book returns.
 -- Author: @csesohag02
--- Table 8 - Fine: Tracks fines incurred by members for overdue book returns.
 CREATE TABLE Fine(
     Fine_id VARCHAR(10) NOT NULL,
     Member_id VARCHAR(10) NOT NULL,
