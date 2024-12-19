@@ -4,6 +4,7 @@
 -- GitHub: https://github.com/csesohag02
 
 -- Set branch id and establish date
+-- Author: @csesohag02
 DELIMITER //
 CREATE TRIGGER set_branch
 BEFORE INSERT ON Branch
@@ -20,8 +21,8 @@ END;
 //
 DELIMITER ;
 
--- Author: @csesohag02
 -- Set employee id and joining date
+-- Author: @csesohag02
 DELIMITER //
 CREATE TRIGGER set_employee
 BEFORE INSERT ON Employee
@@ -38,8 +39,8 @@ END;
 //
 DELIMITER ;
 
--- Author: @csesohag02
 -- Set member id and registration date
+-- Author: @csesohag02
 DELIMITER //
 CREATE TRIGGER set_member
 BEFORE INSERT ON Members
@@ -56,8 +57,8 @@ END;
 //
 DELIMITER ;
 
--- Author: @csesohag02
 -- Set book id
+-- Author: @csesohag02
 DELIMITER //
 CREATE TRIGGER set_book
 BEFORE INSERT ON Book
@@ -71,8 +72,8 @@ END;
 //
 DELIMITER ;
 
--- Author: @csesohag02
 -- Set book copy id and available copies
+-- Author: @csesohag02
 DELIMITER //
 CREATE TRIGGER set_book_copies
 BEFORE INSERT ON Book_copies
@@ -89,8 +90,8 @@ END;
 //
 DELIMITER ;
 
--- Author: @csesohag02
 -- Check available copy, set issue id, branch id, book id, issue date, and due date
+-- Author: @csesohag02
 DELIMITER //
 CREATE TRIGGER set_issue_book
 BEFORE INSERT ON Issue_book
@@ -130,8 +131,9 @@ END;
 //
 DELIMITER ;
 
--- Author: @csesohag02
+
 -- Set fine id and fine date
+-- Author: @csesohag02
 DELIMITER //
 CREATE TRIGGER set_fine
 BEFORE INSERT ON Fine
