@@ -5,6 +5,7 @@
 -- GitHub: https://github.com/csesohag02
 
 -- Insert data into the Branch table
+-- Author: @csesohag02
 INSERT INTO Branch(Branch_address, Contact_no) VALUES
 ('123 Main St', '919099988676'),
 ('456 Elm St', '919099988677'),
@@ -12,16 +13,16 @@ INSERT INTO Branch(Branch_address, Contact_no) VALUES
 ('567 Pine St', '919099988679'),
 ('890 Maple St', '919099988680');
 
--- Author: @csesohag02
 -- Insert data into the Employee_position table
+-- Author: @csesohag02
 INSERT INTO Employee_position(Position_id, Position_name, Position_salary) VALUES
 ('MNGR', 'Manager', 65000),
 ('LIBR', 'Librarian', 55000),
 ('ASST', 'Assistant', 50000),
 ('CLRK', 'Clerk', 45000);
 
--- Author: @csesohag02
 -- Insert data into the Employee table
+-- Author: @csesohag02
 INSERT INTO Employee(Emp_name, Contact_no, Emp_address, Position_id, Branch_id) VALUES
 ('John Doe', '919099900676', '123 Main St', 'MNGR', 'BR100'),
 ('Jane Smith', '919099925676', '456 Elm St', 'LIBR', 'BR102'),
@@ -41,8 +42,8 @@ INSERT INTO Employee(Emp_name, Contact_no, Emp_address, Position_id, Branch_id) 
 ('John Brown', '919098200676', '438 Pine Jn', 'CLRK', 'BR104'),
 ('Mike Martinez', '919098200676', '438 Pine Jn', 'CLRK', 'BR103');
 
--- Author: @csesohag02
 -- insert data into the Members table
+-- Author: @csesohag02
 INSERT INTO Members(Member_name, Member_address, Contact_no, Branch_id) VALUES
 ('Alice Johnson', '123 Main St', '919099925676', 'BR100'),
 ('Bob Smith', '456 Elm St', '915239925676', 'BR104'),
@@ -55,8 +56,8 @@ INSERT INTO Members(Member_name, Member_address, Contact_no, Branch_id) VALUES
 ('Ivy Martinez', '567 Oak St', '919253925676', 'BR101'),
 ('Jack Wilson', '678 Pine St', '919099959676', 'BR103');
 
--- Author: @csesohag02
 -- Insert data into the Book table
+-- Author: @csesohag02
 INSERT INTO Book (ISBN, Book_title, Author, Category, Book_language, Publication_year, Publisher, Price, Book_description) VALUES
 ('978-1-56619-909-4', 'The Great Adventure', 'John Smith', 'Fiction', 'English', 2015, 'Penguin Random House', 299.99, 'An exciting tale of exploration and discovery.'),
 ('978-1-891830-77-8', 'The Magical Forest', 'Emily Green', 'Children\'s Books', 'English', 2019, 'Scholastic', 149.99, 'A charming story for children about a magical forest.'),
@@ -88,8 +89,8 @@ INSERT INTO Book (ISBN, Book_title, Author, Category, Book_language, Publication
 ('978-1-56723-641-8', 'Yoga and Wellness', 'Dr. Ramesh Patel', 'Religious and Spiritual', 'English', 2016, 'Jaico Publishing House', 322.49, 'A holistic guide to yoga practices and their benefits.'),
 ('978-0-88192-570-1', 'Gardening for Beginners', 'Rachel Thomas', 'Hobbies and Leisure', 'English', 2020, 'Timber Press', 199.99, 'A practical introduction to gardening techniques.');
 
--- Author: @csesohag02
 -- Insert data into the Book_copies table
+-- Author: @csesohag02
 INSERT INTO Book_copies(Book_id, Branch_id, No_of_copies) VALUES
 ('BK100', 'BR100', 10),
 ('BK101', 'BR101', 5),
