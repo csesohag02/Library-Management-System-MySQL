@@ -4,7 +4,7 @@
 -- Author: @csesohag02
 -- GitHub: https://github.com/csesohag02
 
--- Create branch archive table
+-- Table 1 - Branch_archive : Stores archived information about library branches, including details such as the reason for archiving and the date of archiving.
 -- Author: @csesohag02
 CREATE TABLE Branch_archive(
     Branch_id VARCHAR(10) NOT NULL,
@@ -16,7 +16,7 @@ CREATE TABLE Branch_archive(
     PRIMARY KEY(Branch_id)
 );
 
--- Create employee archive table
+-- Table 2 - Employee_archive : Stores archived employee records, including the reason for archiving and the date the record was archived.
 -- Author: @csesohag02
 CREATE TABLE Employee_archive(
     Emp_id VARCHAR(10) NOT NULL,
@@ -31,7 +31,7 @@ CREATE TABLE Employee_archive(
     PRIMARY KEY(Emp_id)
 );
 
--- Create member archive table
+-- Table 3 - Member_archive : Stores archived member records, including the reason for archiving and the date the record was archived.
 -- Author: @csesohag02
 CREATE TABLE Member_archive(
     Member_id VARCHAR(10) NOT NULL,
@@ -45,7 +45,7 @@ CREATE TABLE Member_archive(
     PRIMARY KEY(Member_id)
 );
 
--- Create table archive book copies
+-- Table 4 - Book_copies_archive : Stores archived records of book copies, including the reason for archiving and the date the record was archived.
 -- Author: @csesohag02
 CREATE TABLE Book_copies_archive(
     Copy_id VARCHAR(10) NOT NULL,
